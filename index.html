@@ -1,1 +1,168 @@
-Head. Meta charset UTF 8. Meta name viewport content width equals device width initial scale 1. Title Smart Marketing Nepal. Style. Body margin 0, font family Arial, background #090909, color white, line height 1.7. Container width 90 percent, max width 1100 pixels, margin auto. Header padding 22 pixels 0, border bottom 1 pixel solid 292929. Logo font size 22 pixels, font weight bold. Gold class color d 6 a d 60. Nav links white, no underline, margin left 15 pixels, hover gold. Hero padding 110 pixels 0, text align center, background radial gradient circle at top, color stops 30 25 15 to 090909 at 65 percent. Hero h1 font size 44 pixels, gold, margin bottom 15 pixels. Hero p max width 600 pixels, margin 0 auto 30 pixels. Button background gold, color black, padding 12 pixels 22 pixels, border radius 4 pixels, text decoration none, font weight bold, hover background black, hover text gold, border 1 pixel solid gold. Section padding 60 pixels 0. Card background #101010, padding 20 pixels, border radius 8 pixels, margin bottom 15 pixels. Footer text align center, padding 30 pixels 0, color #aaaaaa, font size 14 pixels. Then body content, container div with header (logo and nav), hero section (title, tagline, button), then services with three cards (social media management, content creation, ads running and boosting), then contact with your email and a simple footer.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Marketing Nepal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #090909;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 22px 0;
+            border-bottom: 1px solid #292929;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .gold {
+            color: #d6ad60;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d6ad60;
+        }
+        .hero {
+            padding: 110px 0;
+            text-align: center;
+            background: radial-gradient(circle at top, #302515 0%, #090909 65%);
+        }
+        .hero h1 {
+            font-size: 44px;
+            color: #d6ad60;
+            margin-bottom: 15px;
+        }
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            color: #cccccc;
+        }
+        .btn {
+            background: #d6ad60;
+            color: #000000;
+            padding: 12px 22px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #d6ad60;
+            display: inline-block;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #000000;
+            color: #d6ad60;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #101010;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #222222;
+        }
+        .card h3 {
+            color: #d6ad60;
+            margin-top: 0;
+        }
+        .contact-box {
+            text-align: center;
+            background: #101010;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #222222;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #aaaaaa;
+            font-size: 14px;
+            border-top: 1px solid #292929;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">Smart <span class="gold">Marketing Nepal</span></div>
+            <nav>
+                <a href="#hero">Home</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <h1>Elevate Your Brand in Nepal</h1>
+            <p>We help businesses scale their digital presence, engage loyal audiences, and drive real growth through strategic marketing solutions.</p>
+            <a href="#contact" class="btn">Get Started</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="card">
+                    <h3>Social Media Management</h3>
+                    <p>Consistent posting, community building, and active engagement across your social channels to keep your brand top-of-mind.</p>
+                </div>
+                <div class="card">
+                    <h3>Content Creation</h3>
+                    <p>Compelling graphics, copywriting, and visual storytelling tailored to capture your target audience's attention.</p>
+                </div>
+                <div class="card">
+                    <h3>Ads Running & Boosting</h3>
+                    <p>Strategic, data-driven paid advertising campaigns on Meta and Google designed to maximize your return on investment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-box">
+                <p>Have questions or ready to grow your business? Reach out to us at:</p>
+                <p><a href="mailto:info@smartmarketingnepal.com" class="gold" style="font-size: 18px; font-weight: bold; text-decoration: none;">info@smartmarketingnepal.com</a></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Smart Marketing Nepal. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
